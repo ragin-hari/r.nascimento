@@ -1,0 +1,183 @@
+/* Estilos Gerais */
+
+* {
+    box-sizing: border-box;
+}
+
+section{
+    margin:50px 0 50px 0;
+}
+
+img {
+    align-self: center;
+    border-radius: 25px;
+}
+
+p{
+    padding:10px;
+    text-align: justify;
+    text-justify: auto;
+    text-shadow: 1px 1px rgba(182, 182, 182, 0.3);
+    font-size:large;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(./images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#container {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 1080px;
+    overflow: hidden;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(182, 182, 182, 0.2);
+}
+
+#header {
+    width: 1080px;
+}
+
+
+header h1 {
+    font-family: Brush script MT;
+    font-size: 96px;
+    color: rgba(89, 19, 129, 0.637);
+    text-align: center;
+    margin: 0;
+    text-shadow: 10px 10px rgba(78, 6, 85, 0.075);
+}
+
+header h2 {
+    font-family: Brush script MT;
+    font-size: 48px;
+    color: rgba(45, 47, 155, 0.5);
+    text-align: right;
+    margin: 0px 40px 0px 40px;
+}
+
+/* Chamada */
+
+#chamada {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#chamada img{
+    border-radius: 0;
+}
+
+#chamada div {
+    font-family: Garamond;
+    color: rgb(63, 63, 112);
+    font-size: 2em;
+    padding: 20px;
+    float: right;
+}
+
+/* Artigos */
+
+article {
+    background-color: rgba(182, 182, 182, 0.5);
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foto img,
+.foto p {
+    max-width: 240px;
+    min-width: 120px;
+}
+
+/* Sobre e bio */
+
+#sobre {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+
+}
+
+#bio {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#bio p {
+    float: left;
+}
+
+/* Botão do zap */
+
+#whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+    display: flex;
+    padding: 10px;
+    margin:10px;
+}
+
+#zap{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:black;
+}
+
+#button:hover{
+    background-color: rgba(182, 182, 182, 0.2);
+    border-style: groove;
+}
+
+#button:active{
+    border-style: inset;
+}
+
+#whatsapp img {
+    max-width: 100px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+footer img{
+    width: 48px;
+}
+
+#links{
+    display:block;
+    text-align: center;
+}
