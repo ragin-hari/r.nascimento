@@ -1,24 +1,20 @@
-/* Estilos Gerais */
+/* General developed to phone */
 
 * {
     box-sizing: border-box;
 }
 
-section{
-    margin:50px 0 50px 0;
-}
-
 img {
     align-self: center;
     border-radius: 25px;
+    max-width: 100%;
 }
 
-p{
-    padding:10px;
+p {
+    padding: 5px;
     text-align: justify;
     text-justify: auto;
     text-shadow: 1px 1px rgba(182, 182, 182, 0.3);
-    font-size:large;
 }
 
 body {
@@ -30,30 +26,17 @@ body {
     background-position: center;
 }
 
-#container {
-    display: flex;
-    flex-flow: column nowrap;
-    max-width: 1080px;
-    overflow: hidden;
-}
-
-/* Header */
-
 header {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color:rgba(182, 182, 182, 0.2);
+    background-color: rgba(182, 182, 182, 0.2);
+    padding: 10px 0 20px 0;
 }
-
-#header {
-    width: 1080px;
-}
-
 
 header h1 {
     font-family: Brush script MT;
-    font-size: 96px;
+    font-size: 48px;
     color: rgba(89, 19, 129, 0.637);
     text-align: center;
     margin: 0;
@@ -62,32 +45,21 @@ header h1 {
 
 header h2 {
     font-family: Brush script MT;
-    font-size: 48px;
+    font-size: 24px;
     color: rgba(45, 47, 155, 0.5);
     text-align: right;
     margin: 0px 40px 0px 40px;
 }
 
-/* Chamada */
-
-#chamada {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-#chamada img{
+#chamada img {
     border-radius: 0;
 }
 
 #chamada div {
     font-family: Garamond;
     color: rgb(63, 63, 112);
-    font-size: 2em;
-    padding: 20px;
-    float: right;
+    font-size:1em;
 }
-
-/* Artigos */
 
 article {
     background-color: rgba(182, 182, 182, 0.5);
@@ -96,71 +68,37 @@ article {
     margin: 5px;
 }
 
-#artigos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.foto img,
-.foto p {
-    max-width: 240px;
-    min-width: 120px;
-}
-
-/* Sobre e bio */
-
-#sobre {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-
-}
-
-#bio {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-#bio p {
-    float: left;
-}
-
-/* Botão do zap */
-
-#whatsapp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#button {
-    display: flex;
-    padding: 10px;
-    margin:10px;
-}
-
-#zap{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color:black;
-}
-
-#button:hover{
-    background-color: rgba(182, 182, 182, 0.2);
-    border-style: groove;
-}
-
-#button:active{
-    border-style: inset;
-}
-
 #whatsapp img {
     max-width: 100px;
 }
 
-/* Footer */
+#whatsapp {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+#button {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+#button:hover {
+    background-color: rgba(182, 182, 182, 0.2);
+    border-style: groove;
+}
+
+#button:active {
+    border-style: inset;
+}
+
+#zap {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
 
 footer {
     width: 100%;
@@ -173,11 +111,84 @@ footer {
     align-items: center;
 }
 
-footer img{
+footer img {
     width: 48px;
 }
 
-#links{
-    display:block;
+#links {
+    display: block;
     text-align: center;
+}
+
+@media screen and (min-width:768px) {
+
+
+    section {
+        margin: 50px 0 50px 0;
+    }
+
+    p {
+        padding: 10px;
+        font-size: large;
+    }
+
+    #container {
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 1080px;
+        overflow: hidden;
+    }
+
+    #header {
+        width: 1080px;
+    }
+
+
+    header h1 {
+        font-size: 96px;
+    }
+
+    header h2 {
+        font-size: 48px;
+    }
+
+    #chamada {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #chamada div {
+        font-size: 2em;
+        padding: 20px;
+        float: right;
+    }
+
+    #artigos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .foto img,
+    .foto p {
+        max-width: 240px;
+        min-width: 120px;
+    }
+
+
+    #sobre {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: space-between;
+    }
+
+    #bio {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #bio p {
+        float: left;
+    }
+
 }
